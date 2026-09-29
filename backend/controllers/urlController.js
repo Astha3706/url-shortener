@@ -39,7 +39,7 @@ const shortCode = generateCode();
         });
 
     } catch (error) {
-        console.error(error);
+       console.error("CREATE URL ERROR:", error);
         res.status(500).json({
             message: "Server error"
         });
